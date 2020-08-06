@@ -345,6 +345,7 @@ header a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    
   }
 
 .trainer {
@@ -353,8 +354,52 @@ header a {
    flex: 1;   
 }
 
-.trainer img {
-    width: 100%;
+.trainer-img {
+  width: 100%;
+  min-height: 300px;
+  background-size: cover;
+  display: flex;
+  padding: 15px;
+  align-items: flex-end;
+}
+
+.trainer-img::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background:linear-gradient(rgba(252, 225, 56, 0.3), rgba(2, 78, 118, 1));
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all;
+}
+
+.trainer-img:hover::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background:linear-gradient(rgba(252, 225, 56, 0.3), rgba(2, 78, 118, 1));
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  
+
+}
+
+
+.trainer-img h3 {
+  position: relative;
+  z-index: 9998;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.trainer-img h4 {
+  position: relative;
+  z-index: 9998;
+  font-size: 22px;
 }
 
 .trainer-bio {
@@ -374,6 +419,21 @@ header a {
 
 .trainer-bio p {
     font-size: 17px;
+}
+
+.trainer-1 {
+  background-image: url("../images/01-05-trainers/trainer-1.jpg");
+  position: relative;
+}
+
+.trainer-2 {
+  background-image: url("../images/01-05-trainers/trainer-2.jpg");
+  position: relative;
+}
+
+.trainer-3 {
+  background-image: url("../images/01-05-trainers/trainer-3.jpg");
+  position: relative;
 }
 
 /* Service Plan section */
